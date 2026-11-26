@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    color: #173b67;
+}
+
+.employee-card {
+    background: white;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ccd5df;
+}
+
+.employee-card p {
+    text-align: left;
+}
+
+footer {
+    margin-top: 40px;
+    color: #555;
+}
+
