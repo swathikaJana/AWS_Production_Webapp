@@ -4,7 +4,7 @@ A hands-on AWS cloud engineering project focused on deploying, securing, and sca
 
 This project uses my personal profile website as the application and progressively builds a production-style AWS infrastructure, covering compute, networking, storage, load balancing, auto scaling, and high availability.
 
-> **Project status:** In Progress 🚧
+> **Project status:** In Progress 🚧 . **3 of 8 phases completed**
 
 ## 🎯 Project Objectives
 
