@@ -150,7 +150,7 @@ sudo cp AWS_Production_Webapp/application/* /var/www/html/
 ### Phase 3: Custom VPC + Public/Private Subnets ✅
 
 **VPC**
-![VPC](screenshots/phase3-vpc)
+![VPC](screenshots/phase3-vpc.png)
 
 **Subnets across two Availability Zones**
 ![Subnets](screenshots/phase3-subnets.png)
