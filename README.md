@@ -57,7 +57,7 @@ The target architecture will use a custom VPC distributed across two Availabilit
 |---|---|---|
 | 1 | Personal Profile Website + GitHub | ✅ Completed |
 | 2 | First EC2 Deployment | ✅ Completed|
-| 3 | Custom VPC + Public/Private Subnets | ⏳ Planned |
+| 3 | Custom VPC + Public/Private Subnets | ✅ Completed |
 | 4 | Internet Gateway, NAT Gateway + Route Tables | ⏳ Planned |
 | 5 | Security Groups | ⏳ Planned |
 | 6 | S3 Static Website Hosting | ⏳ Planned |
@@ -146,6 +146,30 @@ sudo cp AWS_Production_Webapp/application/* /var/www/html/
 ```
 
 </details>
+
+### Phase 3: Custom VPC + Public/Private Subnets ✅
+
+**VPC**
+![VPC](screenshots/phase3-vpc.png)
+
+**Subnets across two Availability Zones**
+![Subnets](screenshots/phase3-subnets.png)
+
+**Public subnet auto-assign IP setting**
+![Public subnet settings](screenshots/phase3-public-subnet-settings.png)
+
+| Resource | Name | CIDR | Availability Zone |
+|---|---|---|---|
+| VPC | webapp-vpc | 10.0.0.0/16 | n/a |
+| Public subnet | public-subnet-a | 10.0.1.0/24 | ap-south-1a |
+| Public subnet | public-subnet-b | 10.0.2.0/24 | ap-south-1b |
+| Private subnet | private-subnet-a | 10.0.3.0/24 | ap-south-1a |
+| Private subnet | private-subnet-b | 10.0.4.0/24 | ap-south-1b |
+
+- Created the VPC manually (not with the "VPC and more" wizard) to understand each component
+- Split public and private subnets across two AZs for high availability
+- Enabled auto-assign public IPv4 on the public subnets only
+- **Note:** the "public" subnets can't reach the internet yet. That needs the Internet Gateway and route tables in Phase 4.
 
 *Evidence for later phases will be added as each one is verified.*
 
