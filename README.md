@@ -56,7 +56,7 @@ The target architecture will use a custom VPC distributed across two Availabilit
 | Phase | Implementation | Status |
 |---|---|---|
 | 1 | Personal Profile Website + GitHub | ✅ Completed |
-| 2 | First EC2 Deployment | ⏳ Planned |
+| 2 | First EC2 Deployment | ✅ Completed|
 | 3 | Custom VPC + Public/Private Subnets | ⏳ Planned |
 | 4 | Internet Gateway, NAT Gateway + Route Tables | ⏳ Planned |
 | 5 | Security Groups | ⏳ Planned |
