@@ -90,7 +90,13 @@ AWS_Production_Webapp/
 
 ## 📸 Project Evidence
 
-Screenshots, AWS configuration details, deployment results, and testing evidence will be added here as each phase is completed.
+### Phase 1: Personal Profile Website + GitHub ✅
+![GitHub repository](screenshots/phase1-github-repo.png)
+![Local webpage](screenshots/phase1-local-page.png)
+
+- Built a responsive profile site with HTML and CSS
+- Version-controlled with Git and published to GitHub
+- Verified the page renders correctly locally before deployment
 
 ## 💡 Key Learning Outcomes
 
