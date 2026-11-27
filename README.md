@@ -125,6 +125,27 @@ AWS_Production_Webapp/
 - **Web server:** Apache (`httpd`) installed with `dnf`
 - **Security group:** SSH (22) from my IP only, HTTP (80) from anywhere
 - **Verification:** `curl localhost` returned the HTML, and the page loaded in a browser at the instance's public IPv4 address
+<details>
+<summary><b>Deployment commands (Phase 2)</b></summary>
+
+```bash
+# Update installed packages
+sudo dnf update -y
+
+# Install Apache web server and Git
+sudo dnf install -y httpd git
+
+# Start Apache now and on every reboot
+sudo systemctl enable --now httpd
+
+# Pull the application code from GitHub
+git clone https://github.com/swathikaJana/AWS_Production_Webapp.git
+
+# Publish the site to Apache's web root
+sudo cp AWS_Production_Webapp/application/* /var/www/html/
+```
+
+</details>
 
 *Evidence for later phases will be added as each one is verified.*
 
