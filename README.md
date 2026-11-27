@@ -84,7 +84,11 @@ AWS_Production_Webapp/
 ├── application/
 │   ├── index.html
 │   └── style.css
+├── screenshots/
+│   └── phase2-ec2.png
 │
+├── architecture.svg
+├── .gitignore
 └── README.md
 ```
 
@@ -97,6 +101,32 @@ AWS_Production_Webapp/
 - Built a responsive profile site with HTML and CSS
 - Version-controlled with Git and published to GitHub
 - Verified the page renders correctly locally before deployment
+
+### Phase 2: First EC2 Deployment ✅
+
+**EC2 instance running**
+![EC2 instance](screenshots/phase2-ec2-instance.png)
+
+**Security group inbound rules**
+![Security group](screenshots/phase2-security-group.png)
+
+**Apache running on the server**
+![Apache status](screenshots/phase2-apache-status.png)
+
+**Page served locally (`curl -I localhost`)**
+![curl localhost](screenshots/phase2-curl-localhost.png)
+
+**Page loaded in a browser from the internet**
+![EC2 webpage](screenshots/phase2-browser-ec2.png)
+
+
+- **AMI:** Amazon Linux 2023
+- **Instance type:** t3.micro
+- **Web server:** Apache (`httpd`) installed with `dnf`
+- **Security group:** SSH (22) from my IP only, HTTP (80) from anywhere
+- **Verification:** `curl localhost` returned the HTML, and the page loaded in a browser at the instance's public IPv4 address
+
+*Evidence for later phases will be added as each one is verified.*
 
 ## 💡 Key Learning Outcomes
 
