@@ -21,34 +21,8 @@ This project uses my personal profile website as the application and progressive
 
 The target architecture will use a custom VPC distributed across two Availability Zones.
 
-```mermaid
-flowchart TB
-    U["🌐 Internet / Users"]
-    IGW["Internet Gateway"]
-    subgraph VPC["AWS VPC"]
-        subgraph AZ1["Availability Zone 1"]
-            PUB1["Public Subnet"]
-            ALB["Application Load Balancer"]
-            PRIV1["Private Subnet"]
-            EC2A["EC2 Application Instance"]
-            NAT1["NAT Gateway"]
-        end
-        subgraph AZ2["Availability Zone 2"]
-            PUB2["Public Subnet"]
-            PRIV2["Private Subnet"]
-            EC2B["EC2 Application Instance"]
-        end
-    end
-    S3["Amazon S3"]
-    U --> IGW
-    IGW --> ALB
-    ALB --> EC2A
-    ALB --> EC2B
-    EC2A --> NAT1
-    NAT1 --> IGW
-    EC2B --> NAT1
-    S3 -. "Static website files / assets" .- U
-```
+![AWS Architecture](architecture.svg)
+
 
 *Note: This is the planned target architecture. The diagram will be updated as AWS resources are implemented and verified.*
 
