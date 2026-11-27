@@ -83,9 +83,13 @@ AWS_Production_Webapp/
 │
 ├── application/
 │   ├── index.html
-│   └── style.css
+│   └── styles.css
+│
 ├── screenshots/
-│   └── phase2-ec2.png
+│   ├── phase1-github-repo.png
+│   ├── phase1-local-page.png
+│   ├── phase2-*.png
+│   └── phase3-*.png
 │
 ├── architecture.svg
 ├── .gitignore
@@ -162,7 +166,18 @@ sudo cp AWS_Production_Webapp/application/* /var/www/html/
 | ![Public subnet settings](screenshots/phase3-public-subnet-settings.png) | ![Private subnet settings](screenshots/phase3-private-subnet-settings.png) |
 - **Note:** the public subnets are not yet routable to the internet. The Internet Gateway and route tables come in Phase 4.
 
+| Resource | Name | CIDR | Availability Zone |
+|---|---|---|---|
+| VPC | Swathi-Production-VPC | 10.0.0.0/16 | us-east-1 (region) |
+| Public subnet | public-subnet-a | 10.0.1.0/24 | us-east-1a |
+| Public subnet | public-subnet-b | 10.0.2.0/24 | us-east-1b |
+| Private subnet | private-subnet-a | 10.0.3.0/24 | us-east-1a |
+| Private subnet | private-subnet-b | 10.0.4.0/24 | us-east-1b |
 
+- Created the VPC manually with a custom CIDR and enabled DNS hostnames
+- Placed one public and one private subnet in each of two AZs
+- Enabled auto-assign public IPv4 on the public subnets only
+- **Verification:** all four subnets show Available, belong to the custom VPC, have non-overlapping CIDRs, and are split across `us-east-1a` and `us-east-1b`
 
 *Evidence for later phases will be added as each one is verified.*
 
