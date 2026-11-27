@@ -1,29 +1,70 @@
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Employee Management Portal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b2a">
+  <meta name="description" content="Swathika Janardhan — Senior DevOps Engineer specializing in CI/CD, Kubernetes, AWS, Terraform and DevSecOps.">
+  <title>Swathika Janardhan | Senior DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="container">
-        <h1>Welcome to Employee Management Portal</h1>
-        <p>My First AWS Production Web Application</p>
-
-        <div class="employee-card">
-            <h2>Employee Details</h2>
-            <p><b>Name:</b> Swathi</p>
-            <p><b>Employee ID:</b> EMP001</p>
-            <p><b>Department:</b> DevOps</p>
-            <p><b>Designation:</b> Cloud Engineer</p>
-        </div>
-
-        <footer>
-            Hosted on Amazon Web Services (AWS)
-        </footer>
-    </div>
-
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Swathika Janardhan home"><span class="brand-mark">SJ</span><span>SWATHIKA JANARDHAN</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#education">Education</a>
+      <a class="nav-contact" href="mailto:swathika.janardhan@gmail.com">Let’s connect <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> SENIOR DEVOPS ENGINEER <span class="eyebrow-line"></span> 13+ YEARS <span class="eyebrow-line"></span> COIMBATORE, INDIA</p>
+        <h1>Senior DevOps<br><span>Engineer</span></h1>
+        <p class="hero-keywords">AWS · KUBERNETES & AMAZON EKS · TERRAFORM · JENKINS · GITHUB ACTIONS</p>
+        <p class="hero-copy">Enterprise engineer focused on CI/CD, source control modernization, build and release automation, and reliable platform operations.</p>
+        <div class="hero-actions"><a class="button button-light" href="#experience">Explore my experience <span>↓</span></a><a class="text-link" href="mailto:swathika.janardhan@gmail.com">Get in touch <span>↗</span></a></div>
+        <div class="hero-tags"><span>CI/CD</span><i></i><span>KUBERNETES & EKS</span><i></i><span>INFRASTRUCTURE AS CODE</span><i></i><span>AWS</span></div>
+      </div>
+      <div class="hero-aside"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-core"><span>13+</span><small>YEARS<br>BUILDING</small></div><span class="orbit-label label-top">AUTOMATE</span><span class="orbit-label label-right">OBSERVE</span><span class="orbit-label label-bottom">IMPROVE</span><span class="orbit-label label-left">DELIVER</span><div class="orbit-node node-a"></div><div class="orbit-node node-b"></div><div class="orbit-node node-c"></div></div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 04</span></div>
+    </section>
+    <section class="intro section" id="about">
+      <div class="section-kicker"><span>01</span> / ABOUT</div>
+      <div class="intro-content"><h2>Engineering the<br>way teams <em>deliver.</em></h2><div class="intro-text"><p class="lead">Senior DevOps Engineer with 13+ years in enterprise engineering across CI/CD, SCM, build and release automation, and platform operations.</p><p>At Oracle, led ClearCase-to-Git modernization and delivery improvements using Jenkins, GitHub Actions, Terraform, Amazon Web Services (AWS), Ansible, Docker, and Amazon EKS. Experienced in OCI migration, cross-functional delivery, and developer mentoring.</p><a class="inline-link" href="https://www.linkedin.com/in/swatj" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗</span></a></div></div>
+    </section>
+    <section class="expertise section" id="expertise">
+      <div class="section-kicker"><span>02</span> / WHAT I DO</div>
+      <div class="section-heading"><h2>Skills &<br><em>technical expertise.</em></h2><p>Core tools and practices, grouped by the work they support. I focus on technologies I can discuss in depth.</p></div>
+      <div class="capability-grid">
+        <article class="capability"><span class="cap-number">01</span><div class="cap-icon">⟲</div><h3>CI/CD & Release Engineering</h3><p>Automated build, test, deployment, artifact management, and controlled environment promotion.</p><div class="chips"><span>Jenkins</span><span>GitHub Actions</span><span>Git</span><span>GitHub</span><span>Git Hooks</span><span>Release governance</span></div></article>
+        <article class="capability"><span class="cap-number">02</span><div class="cap-icon">⌘</div><h3>Cloud & Infrastructure as Code</h3><p>Repeatable infrastructure, cloud networking, configuration management, and access control.</p><div class="chips"><span>Amazon Web Services (AWS)</span><span>Oracle Cloud (OCI)</span><span>Terraform</span><span>Ansible</span><span>IAM</span><span>VPC</span></div></article>
+        <article class="capability"><span class="cap-number">03</span><div class="cap-icon">◉</div><h3>Kubernetes & Containers</h3><p>EKS operations, cluster upgrades, container delivery, and right-sized workloads.</p><div class="chips"><span>Kubernetes</span><span>Amazon EKS</span><span>Docker</span><span>Docker Compose</span><span>Amazon ECR</span><span>Autoscaling</span></div></article>
+        <article class="capability"><span class="cap-number">04</span><div class="cap-icon">⌁</div><h3>Observability & DevSecOps</h3><p>Monitoring, actionable alerting, runbooks, image scanning, and secrets management.</p><div class="chips"><span>Prometheus</span><span>Grafana</span><span>Amazon CloudWatch</span><span>ELK Stack</span><span>Trivy</span><span>SonarQube</span></div></article>
+      </div>
+      <div class="skills-strip"><span>SCM, SCRIPTING & SYSTEMS</span><p>ClearCase <b>·</b> SVN <b>·</b> Bash / Shell <b>·</b> Python <b>·</b> Perl <b>·</b> YAML <b>·</b> Linux <b>·</b> Windows <b>·</b> Jira <b>·</b> ServiceNow <b>·</b> AWS S3, EC2, ALB, Auto Scaling, Backup, Secrets Manager & Parameter Store</p></div>
+    </section>
+    <section class="experience section" id="experience">
+      <div class="section-kicker"><span>03</span> / EXPERIENCE</div>
+      <div class="section-heading"><h2>A career in<br><em>continuous improvement.</em></h2><p>Enterprise engineering experience across cloud, DevOps, configuration management, and source control.</p></div>
+      <div class="timeline">
+        <article class="role role-featured"><div class="role-date">FEB 2022 — OCT 2026 <span class="current-pill">LATEST ROLE</span></div><div class="role-body"><div class="role-company">ORACLE CORPORATION <span>Coimbatore / India</span></div><h3>Project Lead — SCM, Build & Automation (DevOps)</h3><p>Led SCM modernization and advanced delivery automation across enterprise environments.</p><ul><li>Led ClearCase-to-Git modernization, automating repository refactoring and coaching developers on Git workflows.</li><li>Built Jenkins and GitHub Actions workflows for validation, testing, Docker builds, and deployment; integrated Terraform plan review into delivery.</li><li>Developed reusable Terraform modules for AWS networking and compute across DEV, TEST, and PROD; contributed to OCI migration.</li><li>Managed EKS upgrades and workload sizing; improved platform reliability with Prometheus, Grafana, and CloudWatch dashboards, alerts, and runbooks.</li><li>Added Trivy image scanning, managed credentials and release approvals, and strengthened auditable release practices.</li></ul><div class="role-tools"><span>Jenkins</span><span>GitHub Actions</span><span>AWS</span><span>EKS</span><span>Terraform</span><span>Docker</span><span>Prometheus</span></div></div></article>
+        <article class="role"><div class="role-date">JUN 2021 — FEB 2022</div><div class="role-body"><div class="role-company">COGNIZANT TECHNOLOGY SOLUTIONS <span>India</span></div><h3>Infrastructure Dev Specialist — Senior Associate</h3><p>Automated repeatable infrastructure and supported resilient enterprise SCM services.</p><ul><li>Created Ansible playbooks and reusable roles for consistent Linux and application configuration across environments.</li><li>Provisioned AWS compute and networking with Terraform and least-privilege IAM; supported change review.</li><li>Managed cross-platform backup, recovery, and DR activities, and administered ClearCase 9.x and Multisite on UNIX/Linux.</li><li>Contributed to ClearCase-to-SVN migration and coached teams on source-control and branching practices.</li></ul></div></article>
+        <article class="role"><div class="role-date">NOV 2020 — APR 2021</div><div class="role-body"><div class="role-company">VHR SOLUTIONS <span>India</span></div><h3>Senior Lead Analyst</h3><p>Automated ClearCase administration with Perl; supported Multisite monitoring, alerting, backup recovery, and ACL administration.</p></div></article>
+        <article class="role"><div class="role-date">JUL 2010 — MAR 2015</div><div class="role-body"><div class="role-company">JPMORGAN CHASE <span>India</span></div><h3>Apps Support Analyst — SCM</h3><p>Provided L3 support for ClearCase, Git, and Subversion; contributed to migrations to Git and Stash and trained application teams.</p></div></article>
+        <article class="role"><div class="role-date">APR 2008 — JUN 2010</div><div class="role-body"><div class="role-company">TATA CONSULTANCY SERVICES <span>India</span></div><h3>Associate System Engineer</h3><p>Administered approximately 400 ClearCase VOBs and Multisite replicas; built Perl automation to support SCM administration.</p></div></article>
+        <article class="role"><div class="role-date">SEP 2007 — MAR 2008</div><div class="role-body"><div class="role-company">IBM INDIA <span>India</span></div><h3>Associate Software Engineer</h3><p>Supported test-environment setup and defect identification for web applications.</p></div></article>
+      </div>
+    </section>
+    <section class="education section" id="education"><div class="section-kicker"><span>04</span> / EDUCATION</div><div class="edu-grid"><div><h2>Grounded in<br><em>curiosity.</em></h2><p>Learning the business and the systems behind it.</p></div><div class="edu-list"><article><span>2008 — 2010</span><h3>MBA, Information Systems</h3><p>Bharathiar University</p></article><article><span>2004 — 2007</span><h3>B.Sc., Computer Science</h3><p>Bharathiar University</p></article><article><span>CERTIFICATIONS</span><h3>Rational ClearCase for UNIX Administration</h3><p>Six Sigma Green Belt</p></article></div></div></section>
+    <section class="contact"><div class="contact-orb"></div><p class="eyebrow">HAVE A PLATFORM CHALLENGE?</p><h2>Let’s make delivery<br><em>more dependable.</em></h2><p class="contact-copy">I’m always happy to talk about DevOps, cloud platforms, and building better engineering workflows.</p><a class="button button-light" href="mailto:swathika.janardhan@gmail.com">Start a conversation <span>↗</span></a><div class="contact-details"><a href="tel:+916380172097">+91 63801 72097</a><span>·</span><a href="mailto:swathika.janardhan@gmail.com">swathika.janardhan@gmail.com</a><span>·</span><a href="https://www.linkedin.com/in/swatj" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">SJ</span><span>SWATHIKA JANARDHAN</span></a><span>© <span id="year"></span> Swathika Janardhan</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
-
